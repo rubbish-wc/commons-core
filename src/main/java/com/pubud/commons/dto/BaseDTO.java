@@ -92,4 +92,19 @@ public class BaseDTO implements Serializable, IBaseConstants {
     public void setLastUpdatedBy(Long lastUpdatedBy) {
         this.lastUpdatedBy = lastUpdatedBy;
     }
+
+    /**
+     * 重写toString
+     * @return
+     */
+    @Override
+    public String toString() {
+        return "BaseDTO{" +
+                "objectVersionNumber=" + objectVersionNumber +
+                ", createdBy=" + createdBy +
+                ", creationDate=" + creationDate +
+                ", lastUpdateDate=" + lastUpdateDate +
+                ", lastUpdatedBy=" + lastUpdatedBy +
+                '}';
+    }
 }

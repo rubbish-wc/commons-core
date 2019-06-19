@@ -36,11 +36,17 @@ import java.util.Properties;
 @Intercepts({@Signature(type = StatementHandler.class, method = "prepare", args = {Connection.class, Integer.class})})
 public class OptimisticLocker implements Interceptor {
 
-    //数据库列名
+    /**
+     * 数据库列名
+     */
     private static String VERSION_COLUMN = "object_version_number";
-    //实体类字段名
+    /**
+     * 实体类字段名
+     */
     private static String VERSION_FIELD = "objectVersionNumber";
-    //拦截类型
+    /**
+     * 拦截类型
+     */
     private static final String METHOD_TYPE = "prepare";
 
     private static Properties props = null;

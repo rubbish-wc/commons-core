@@ -30,7 +30,7 @@ public class BaseResponseDTO<T> implements Serializable {
     private String message;
     @JsonInclude(JsonInclude.Include.NON_NULL)
     private List<?> rows;
-    private boolean success;
+    private Boolean success;
     @JsonInclude(JsonInclude.Include.NON_NULL)
     private Long total;
 
@@ -152,5 +152,20 @@ public class BaseResponseDTO<T> implements Serializable {
 
     public void setTotal(Long total) {
         this.total = total;
+    }
+
+    /**
+     * 重写toString
+     * @return
+     */
+    @Override
+    public String toString() {
+        return "BaseResponseDTO{" +
+                "code='" + code + '\'' +
+                ", message='" + message + '\'' +
+                ", rows=" + rows +
+                ", success=" + success +
+                ", total=" + total +
+                '}';
     }
 }

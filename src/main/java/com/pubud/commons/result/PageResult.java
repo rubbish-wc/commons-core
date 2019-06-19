@@ -28,7 +28,7 @@ public class PageResult<T> implements Serializable {
     /**
      * 业务结果
      */
-    private boolean isSuccess;
+    private Boolean isSuccess;
 
     /**
      * 异常信息

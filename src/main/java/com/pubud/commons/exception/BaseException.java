@@ -21,26 +21,32 @@ public class BaseException extends Exception implements Serializable,IBaseExcept
         this.parameters = parameters;
     }
 
+    @Override
     public String getCode() {
         return this.code;
     }
 
+    @Override
     public String getDescriptionKey() {
         return this.descriptionKey;
     }
 
+    @Override
     public Object[] getParameters() {
         return this.parameters;
     }
 
+    @Override
     public void setCode(String code) {
         this.code = code;
     }
 
+    @Override
     public void setDescriptionKey(String descriptionKey) {
         this.descriptionKey = descriptionKey;
     }
 
+    @Override
     public void setParameters(Object[] parameters) {
         this.parameters = parameters;
     }

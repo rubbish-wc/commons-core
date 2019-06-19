@@ -7,6 +7,7 @@ import java.io.Serializable;
 
 /**
  * web层对象的封装
+ * @author wangbaolinag
  * @param <T>
  */
 @Data
@@ -17,7 +18,7 @@ public class Result<T> implements Serializable {
     /**
      * 相应状态标志
      */
-    private boolean isSuccess;
+    private Boolean isSuccess;
 
     /**
      * 响应实体
