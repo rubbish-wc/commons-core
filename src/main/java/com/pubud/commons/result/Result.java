@@ -1,6 +1,7 @@
 package com.pubud.commons.result;
 
 import com.pubud.commons.exception.ExceptionInfo;
+import lombok.Data;
 
 import java.io.Serializable;
 
@@ -8,6 +9,7 @@ import java.io.Serializable;
  * web层对象的封装
  * @param <T>
  */
+@Data
 public class Result<T> implements Serializable {
 
     private static final long serialVersionUID = -8357245559316888318L;
@@ -27,27 +29,4 @@ public class Result<T> implements Serializable {
      */
     private ExceptionInfo exceptionInfo;
 
-    public boolean isSuccess() {
-        return isSuccess;
-    }
-
-    public void setSuccess(boolean success) {
-        isSuccess = success;
-    }
-
-    public T getModel() {
-        return model;
-    }
-
-    public void setModel(T model) {
-        this.model = model;
-    }
-
-    public ExceptionInfo getExceptionInfo() {
-        return exceptionInfo;
-    }
-
-    public void setExceptionInfo(ExceptionInfo exceptionInfo) {
-        this.exceptionInfo = exceptionInfo;
-    }
 }
