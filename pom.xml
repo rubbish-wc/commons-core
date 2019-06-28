@@ -19,12 +19,19 @@
 		<tkmybatis.version>2.0.2</tkmybatis.version>
 		<swagger2.version>2.6.1</swagger2.version>
 		<pagehelper.version>5.1.2</pagehelper.version>
+		<lombok.version>1.18.8</lombok.version>
 	</properties>
 
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter</artifactId>
+		</dependency>
+
+		<!--引入web模块-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
 		<!--引入tk.mybatis-->
@@ -53,19 +60,26 @@
 			<version>${pagehelper.version}</version>
 		</dependency>
 
+		<!--引入logback-core-->
 		<dependency>
 			<groupId>ch.qos.logback</groupId>
 			<artifactId>logback-core</artifactId>
 		</dependency>
 
+		<!--引入lombok-->
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
-			<version>1.18.8</version>
+			<version>${lombok.version}</version>
 		</dependency>
 
+		<!--引入thymeleaf-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-thymeleaf</artifactId>
+		</dependency>
 
-	</dependencies>
+    </dependencies>
 
 	<distributionManagement>
 		<repository>
@@ -90,7 +104,5 @@
 			</plugin>
 		</plugins>
 	</build>
-
-
 
 </project>

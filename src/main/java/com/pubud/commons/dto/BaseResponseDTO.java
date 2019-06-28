@@ -43,6 +43,11 @@ public class BaseResponseDTO<T> implements Serializable {
         this.message = HTTP_RETURN_SUCCESS_MESSAGE;
     }
 
+
+    public BaseResponseDTO(boolean isSuccess){
+        this.success = isSuccess;
+    }
+
     /**
      * 传入object,默认构造器
      * @param t

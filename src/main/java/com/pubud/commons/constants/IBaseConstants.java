@@ -46,4 +46,10 @@ public interface IBaseConstants {
     Pattern PATTERN_EMAIL_REGEX = Pattern.compile("^([\\s\\S]*)+@([\\S\\s]*)+(\\.([\\S\\s]*)+)+$");
     Pattern UESR_NAME_REGEX = Pattern.compile("^[A-Za-z0-9]{6,20}$");
     String UNDER_LINE = "_";
+    String X_REQUESTED_WIDTH = "X-Requested-With";
+    String XML_HTTP_REQUEST = "XMLHttpRequest";
+    String API_PREFIX = "/api/";
+    String CHARSET_UTF8 = "UTF-8";
+    String HTML_CONTENT_TYPE = "text/html;charset=UTF-8";
+    String JSON_CONTENT_TYPE = "application/json;charset=UTF-8";
 }

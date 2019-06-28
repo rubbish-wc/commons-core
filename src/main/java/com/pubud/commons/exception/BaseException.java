@@ -3,6 +3,10 @@ package com.pubud.commons.exception;
 import java.io.Serializable;
 
 /**
+ * @Description 异常定义规范：
+ * 其他基础异常继承自 该异常：业务异常（BaseBizException）、运行时异常（BaseRuntimeException）、其他异常
+ * 定义不同类别异常代码格式：例如：01-   、02-  、 03-
+ * 子类复写不同参数构造器
  * @Author: charleyZZZZ
  * @Date: 2019/6/19 11:39
  * @Version 1.0
