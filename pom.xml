@@ -17,7 +17,7 @@
 	<properties>
 		<java.version>1.8</java.version>
 		<tkmybatis.version>2.0.2</tkmybatis.version>
-		<swagger2.version>2.6.1</swagger2.version>
+		<swagger2.version>2.10.0</swagger2.version>
 		<pagehelper.version>5.1.2</pagehelper.version>
 		<lombok.version>1.18.8</lombok.version>
 	</properties>
